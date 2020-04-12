@@ -3,3 +3,17 @@
   <p>flgがTrueだとこれが表示されます</p>
 </div>
 <hr />
+<div *ngIf='flg2; else Statement'>
+  <p>{{flg2}}</p>
+</div>
+<ng-template #Statement>
+  <p>falseの時に表示される内容です</p>
+</ng-template>
+<hr />
+<button (click)="doClick()">
+  ボタン
+</button>
+<div *ngIf="flg3">
+  <p>ボタンをクリックするとこのメッセージが表示されます。もう一度クリックすると再び非表示になります。</p>
+</div>
+<hr />

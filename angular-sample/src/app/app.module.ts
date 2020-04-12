@@ -4,15 +4,39 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgifSampleComponent } from './ngif-sample/ngif-sample.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgforSampleComponent } from './ngfor-sample/ngfor-sample.component';
+import { ExpanelSampleComponent } from './expanel-sample/expanel-sample.component';
+import { NgplotSampleComponent } from './ngplot-sample/ngplot-sample.component';
+import { NgdialogSampleComponent } from './ngdialog-sample/ngdialog-sample.component';
+import { NgdialogpageSampleComponent } from './ngdialogpage-sample/ngdialogpage-sample.component';
+import { NgapiSampleComponent } from './ngapi-sample/ngapi-sample.component';
+import { BitcoinSampleComponent } from './bitcoin-sample/bitcoin-sample.component';
+import { BitflyerSampleComponent } from './bitflyer-sample/bitflyer-sample.component';
+import { FiledownloadSampleComponent } from './filedownload-sample/filedownload-sample.component';
+import { NgtableSampleComponent } from './ngtable-sample/ngtable-sample.component';
+import { NguploadSampleComponent } from './ngupload-sample/ngupload-sample.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgifSampleComponent
+    NgifSampleComponent,
+    NgforSampleComponent,
+    ExpanelSampleComponent,
+    NgplotSampleComponent,
+    NgdialogSampleComponent,
+    NgdialogpageSampleComponent,
+    NgapiSampleComponent,
+    BitcoinSampleComponent,
+    BitflyerSampleComponent,
+    FiledownloadSampleComponent,
+    NgtableSampleComponent,
+    NguploadSampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

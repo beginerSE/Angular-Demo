@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NgifSampleComponent implements OnInit {
   flg1: boolean;
-  flg2: boolean;
+  flg2: boolean; //追記
   flg3: boolean;
 
   constructor() {
