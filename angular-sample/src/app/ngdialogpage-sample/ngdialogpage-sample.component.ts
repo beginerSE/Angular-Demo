@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
+import { NgdialogviewSampleComponent } from "../ngdialogview-sample/ngdialogview-sample.component"; // これを追加!
 
 @Component({
-  selector: 'app-ngdialogpage-sample',
-  templateUrl: './ngdialogpage-sample.component.html',
-  styleUrls: ['./ngdialogpage-sample.component.css']
+  selector: "app-ngdialogpage-sample",
+  templateUrl: "./ngdialogpage-sample.component.html",
+  styleUrls: ["./ngdialogpage-sample.component.css"],
 })
 export class NgdialogpageSampleComponent implements OnInit {
+  // アラートの押されたボタンの結果を格納する変数
+  data: string;
+  constructor(public dialog: MatDialog) {}
 
-  constructor() { }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(NgdialogviewSampleComponent, {
+      data: { title: "ダイアログ確認", message: "ダイアログが表示されます" },
+      height: "300px",
+      width: "500px",
+      disableClose: false,
+    });
 
-  ngOnInit() {
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log("The dialog was closed");
+      this.data = result;
+    });
   }
 
+  ngOnInit() {}
 }
