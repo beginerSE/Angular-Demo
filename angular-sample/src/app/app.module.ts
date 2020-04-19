@@ -24,6 +24,8 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
+import { NgxChartsModule } from "@swimlane/ngx-charts";
+import { PdfSampleComponent } from './pdf-sample/pdf-sample.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { FormsModule } from "@angular/forms";
     FullcalendarSampleComponent,
     CustomFullcalendarSampleComponent,
     NgdialogviewSampleComponent,
+    PdfSampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { FormsModule } from "@angular/forms";
     MatButtonModule,
     MatInputModule,
     FormsModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
