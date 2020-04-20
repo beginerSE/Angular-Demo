@@ -6,6 +6,7 @@ import { CustomFullcalendarSampleComponent } from "./custom-fullcalendar-sample/
 import { NgdialogpageSampleComponent } from "./ngdialogpage-sample/ngdialogpage-sample.component"; // これを追加!
 import { NgplotSampleComponent } from "./ngplot-sample/ngplot-sample.component";
 import { PdfSampleComponent } from "./pdf-sample/pdf-sample.component";
+import { NgcalendarSampleComponent } from "./ngcalendar-sample/ngcalendar-sample.component";
 
 const routes: Routes = [
   { path: "ngif", component: NgifSampleComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: "dialog", component: NgdialogpageSampleComponent },
   { path: "plot", component: NgplotSampleComponent },
   { path: "pdf", component: PdfSampleComponent },
+  { path: "angular-calendar-sample", component: NgcalendarSampleComponent },
 ];
 
 @NgModule({

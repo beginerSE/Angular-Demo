@@ -25,7 +25,15 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
 import { NgxChartsModule } from "@swimlane/ngx-charts";
-import { PdfSampleComponent } from './pdf-sample/pdf-sample.component';
+import { PdfSampleComponent } from "./pdf-sample/pdf-sample.component";
+import { NgcalendarSampleComponent } from "./ngcalendar-sample/ngcalendar-sample.component";
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
+import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
+import { FlatpickrModule } from "angularx-flatpickr";
+import { CommonModule } from "@angular/common";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -46,6 +54,7 @@ import { PdfSampleComponent } from './pdf-sample/pdf-sample.component';
     CustomFullcalendarSampleComponent,
     NgdialogviewSampleComponent,
     PdfSampleComponent,
+    NgcalendarSampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,11 +64,22 @@ import { PdfSampleComponent } from './pdf-sample/pdf-sample.component';
     MatDialogModule,
     MatButtonModule,
     MatInputModule,
-    FormsModule,
+
     NgxChartsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    CommonModule,
+    FormsModule,
+    FlatpickrModule.forRoot(),
+    NgbModalModule,
+    MatButtonToggleModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [NgdialogviewSampleComponent],
+  exports: [NgcalendarSampleComponent],
 })
 export class AppModule {}
