@@ -1,1 +1,35 @@
-<p>pdf-sample works!</p>
+<div id="contentToConvert">
+  <h2>職務経歴書</h2>
+  <h3>【職務概要】</h3>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <ngx-charts-line-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [timeline]="timeline"
+    [results]="sampleData"
+    (select)="onSelect($event)"
+    (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)"
+  >
+  </ngx-charts-line-chart>
+  <h3>【職務経歴】</h3>
+  <p>AngularUniversityに通いながらボディーガードをやっていました</p>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <h3>【期間】</h3>
+  <p>1999〜2018</p>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <h3>【自己アピール】</h3>
+  <p>○○○○○○○○○○○○○○○○○○○○○○</p>
+  <button mat-raised-button color="primary">test</button>
+  <br /><br /><br /><br />
+</div>
+<button (click)="captureScreen()">PDFをダウンロード</button>
