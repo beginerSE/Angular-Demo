@@ -7,6 +7,7 @@ import { NgdialogpageSampleComponent } from "./ngdialogpage-sample/ngdialogpage-
 import { NgplotSampleComponent } from "./ngplot-sample/ngplot-sample.component";
 import { PdfSampleComponent } from "./pdf-sample/pdf-sample.component";
 import { NgcalendarSampleComponent } from "./ngcalendar-sample/ngcalendar-sample.component";
+import { PdfViewerSampleComponent } from "./pdf-viewer-sample/pdf-viewer-sample.component";
 
 const routes: Routes = [
   { path: "ngif", component: NgifSampleComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   }, //これを追加!,
   { path: "dialog", component: NgdialogpageSampleComponent },
   { path: "plot", component: NgplotSampleComponent },
-  { path: "pdf", component: PdfSampleComponent },
+  { path: "pdf-generate", component: PdfSampleComponent },
+  { path: "pdf-viewer", component: PdfViewerSampleComponent },
   { path: "angular-calendar-sample", component: NgcalendarSampleComponent },
 ];
 

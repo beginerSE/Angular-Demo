@@ -34,7 +34,8 @@ import { FlatpickrModule } from "angularx-flatpickr";
 import { CommonModule } from "@angular/common";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { FlexLayoutModule } from "@angular/flex-layout";
-
+import { PdfViewerModule } from "ng2-pdf-viewer";
+import { PdfViewerSampleComponent } from './pdf-viewer-sample/pdf-viewer-sample.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     NgdialogviewSampleComponent,
     PdfSampleComponent,
     NgcalendarSampleComponent,
+    PdfViewerSampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +78,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     NgbModalModule,
     MatButtonToggleModule,
     FlexLayoutModule,
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
