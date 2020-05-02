@@ -36,6 +36,7 @@ import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PdfViewerModule } from "ng2-pdf-viewer";
 import { PdfViewerSampleComponent } from './pdf-viewer-sample/pdf-viewer-sample.component';
+import { FlexlauoutSampleComponent } from './flexlauout-sample/flexlauout-sample.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +58,7 @@ import { PdfViewerSampleComponent } from './pdf-viewer-sample/pdf-viewer-sample.
     PdfSampleComponent,
     NgcalendarSampleComponent,
     PdfViewerSampleComponent,
+    FlexlauoutSampleComponent,
   ],
   imports: [
     BrowserModule,

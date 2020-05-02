@@ -1,0 +1,39 @@
+.header {
+  height: 100px;
+  border-width: thick;
+  border-color: blue;
+  border-style: solid;
+}
+
+.item1 {
+  border-width: thick;
+  border-color: #ff0000;
+  border-style: solid;
+  padding: 5px;
+
+}
+
+.item2 {
+  border-width: thick;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+
+.item3 {
+  border-width: thick;
+  border-color: green;
+  border-style: solid;
+  padding: 5px;
+}
+
+.footer {
+  height: 100px;
+  border-width: thick;
+  border-color: yellow;
+  border-style: solid;
+}
+
+.main {
+  min-height: 100vh;
+}
