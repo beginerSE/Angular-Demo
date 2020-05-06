@@ -9,6 +9,8 @@ import { PdfSampleComponent } from "./pdf-sample/pdf-sample.component";
 import { NgcalendarSampleComponent } from "./ngcalendar-sample/ngcalendar-sample.component";
 import { PdfViewerSampleComponent } from "./pdf-viewer-sample/pdf-viewer-sample.component";
 import { FlexlauoutSampleComponent } from "./flexlauout-sample/flexlauout-sample.component";
+import { BitcoinSampleComponent } from "./bitcoin-sample/bitcoin-sample.component";
+import { NgapiSampleComponent } from "./ngapi-sample/ngapi-sample.component";
 
 const routes: Routes = [
   { path: "ngif", component: NgifSampleComponent },
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: "pdf-viewer", component: PdfViewerSampleComponent },
   { path: "angular-calendar-sample", component: NgcalendarSampleComponent },
   { path: "flexlayout-sample", component: FlexlauoutSampleComponent },
+  { path: "bitcoin-sample", component: BitcoinSampleComponent },
+  { path: "api-sample", component: NgapiSampleComponent },
 ];
 
 @NgModule({

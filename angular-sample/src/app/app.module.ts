@@ -35,8 +35,10 @@ import { CommonModule } from "@angular/common";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PdfViewerModule } from "ng2-pdf-viewer";
-import { PdfViewerSampleComponent } from './pdf-viewer-sample/pdf-viewer-sample.component';
-import { FlexlauoutSampleComponent } from './flexlauout-sample/flexlauout-sample.component';
+import { PdfViewerSampleComponent } from "./pdf-viewer-sample/pdf-viewer-sample.component";
+import { FlexlauoutSampleComponent } from "./flexlauout-sample/flexlauout-sample.component";
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +83,7 @@ import { FlexlauoutSampleComponent } from './flexlauout-sample/flexlauout-sample
     MatButtonToggleModule,
     FlexLayoutModule,
     PdfViewerModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
