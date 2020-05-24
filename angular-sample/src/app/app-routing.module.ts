@@ -11,6 +11,10 @@ import { PdfViewerSampleComponent } from "./pdf-viewer-sample/pdf-viewer-sample.
 import { FlexlauoutSampleComponent } from "./flexlauout-sample/flexlauout-sample.component";
 import { BitcoinSampleComponent } from "./bitcoin-sample/bitcoin-sample.component";
 import { NgapiSampleComponent } from "./ngapi-sample/ngapi-sample.component";
+import { CsvSampleComponent } from "./csv-sample/csv-sample.component";
+import { ExpanelSampleComponent } from "./expanel-sample/expanel-sample.component";
+import { NgtableSampleComponent } from "./ngtable-sample/ngtable-sample.component";
+import { MultiTableSampleComponent } from "./multi-table-sample/multi-table-sample.component";
 
 const routes: Routes = [
   { path: "ngif", component: NgifSampleComponent },
@@ -27,6 +31,10 @@ const routes: Routes = [
   { path: "flexlayout-sample", component: FlexlauoutSampleComponent },
   { path: "bitcoin-sample", component: BitcoinSampleComponent },
   { path: "api-sample", component: NgapiSampleComponent },
+  { path: "csv-download", component: CsvSampleComponent },
+  { path: "expanel-sample", component: ExpanelSampleComponent },
+  { path: "mattable-sample", component: NgtableSampleComponent },
+  { path: "multi-mattable-sample", component: MultiTableSampleComponent },
 ];
 
 @NgModule({

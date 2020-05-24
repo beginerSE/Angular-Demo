@@ -23,6 +23,8 @@ import { NgdialogviewSampleComponent } from "./ngdialogview-sample/ngdialogview-
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
+import { MatTableModule } from "@angular/material";
+import { MatExpansionModule } from "@angular/material/expansion";
 import { FormsModule } from "@angular/forms";
 import { NgxChartsModule } from "@swimlane/ngx-charts";
 import { PdfSampleComponent } from "./pdf-sample/pdf-sample.component";
@@ -38,6 +40,9 @@ import { PdfViewerModule } from "ng2-pdf-viewer";
 import { PdfViewerSampleComponent } from "./pdf-viewer-sample/pdf-viewer-sample.component";
 import { FlexlauoutSampleComponent } from "./flexlauout-sample/flexlauout-sample.component";
 import { HttpClientModule } from "@angular/common/http";
+import { CsvSampleComponent } from "./csv-sample/csv-sample.component";
+import { MatIconModule } from "@angular/material/icon";
+import { MultiTableSampleComponent } from './multi-table-sample/multi-table-sample.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +66,8 @@ import { HttpClientModule } from "@angular/common/http";
     NgcalendarSampleComponent,
     PdfViewerSampleComponent,
     FlexlauoutSampleComponent,
+    CsvSampleComponent,
+    MultiTableSampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,6 +77,7 @@ import { HttpClientModule } from "@angular/common/http";
     MatDialogModule,
     MatButtonModule,
     MatInputModule,
+    MatTableModule,
 
     NgxChartsModule,
     CalendarModule.forRoot({
@@ -84,6 +92,8 @@ import { HttpClientModule } from "@angular/common/http";
     FlexLayoutModule,
     PdfViewerModule,
     HttpClientModule,
+    MatExpansionModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
