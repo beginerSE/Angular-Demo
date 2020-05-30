@@ -15,6 +15,7 @@ import { CsvSampleComponent } from "./csv-sample/csv-sample.component";
 import { ExpanelSampleComponent } from "./expanel-sample/expanel-sample.component";
 import { NgtableSampleComponent } from "./ngtable-sample/ngtable-sample.component";
 import { MultiTableSampleComponent } from "./multi-table-sample/multi-table-sample.component";
+import { EditTableSampleComponent } from "./edit-table-sample/edit-table-sample.component";
 
 const routes: Routes = [
   { path: "ngif", component: NgifSampleComponent },
@@ -22,7 +23,7 @@ const routes: Routes = [
   {
     path: "custom-fullcalendar-sample",
     component: CustomFullcalendarSampleComponent,
-  }, //これを追加!,
+  },
   { path: "dialog", component: NgdialogpageSampleComponent },
   { path: "plot", component: NgplotSampleComponent },
   { path: "pdf-generater", component: PdfSampleComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: "expanel-sample", component: ExpanelSampleComponent },
   { path: "mattable-sample", component: NgtableSampleComponent },
   { path: "multi-mattable-sample", component: MultiTableSampleComponent },
+  { path: "edit-mattable-sample", component: EditTableSampleComponent },
 ];
 
 @NgModule({

@@ -42,7 +42,9 @@ import { FlexlauoutSampleComponent } from "./flexlauout-sample/flexlauout-sample
 import { HttpClientModule } from "@angular/common/http";
 import { CsvSampleComponent } from "./csv-sample/csv-sample.component";
 import { MatIconModule } from "@angular/material/icon";
-import { MultiTableSampleComponent } from './multi-table-sample/multi-table-sample.component';
+import { MultiTableSampleComponent } from "./multi-table-sample/multi-table-sample.component";
+import { EditTableSampleComponent } from "./edit-table-sample/edit-table-sample.component";
+import { EditDialogComponent } from "./edit-dialog/edit-dialog.component";
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { MultiTableSampleComponent } from './multi-table-sample/multi-table-samp
     FlexlauoutSampleComponent,
     CsvSampleComponent,
     MultiTableSampleComponent,
+    EditTableSampleComponent,
+    EditDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -97,7 +101,7 @@ import { MultiTableSampleComponent } from './multi-table-sample/multi-table-samp
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [NgdialogviewSampleComponent],
+  entryComponents: [NgdialogviewSampleComponent, EditDialogComponent],
   exports: [NgcalendarSampleComponent],
 })
 export class AppModule {}
